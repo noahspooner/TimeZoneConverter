@@ -161,15 +161,16 @@
                 am_pm = 'PM'
             }
           
-            if(hour>12)
+            if (hour > 12)
             {
-                hour=hour%12
+                hour = hour % 12
             }
           
-            if(hour==0)
+            if (hour == 0)
             {
-                hour=12
+                hour = 12
             }
+
         }
 
         let time = hour + ':' + minute + " " + am_pm
@@ -340,15 +341,16 @@
                 am_pm = 'PM'
             }
 
-            if(hour>12)
+            if (hour > 12)
             {
-                hour=hour%12
+                hour = hour % 12
             }
           
-            if(hour==0)
+            if (hour == 0)
             {
-                hour=12
+                hour = 12
             }
+
         }
 
 

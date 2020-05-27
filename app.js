@@ -181,17 +181,45 @@
 
 // Other Cities
 
-    // Shanghai
 
-    
+    let offset;
+
+    let other_city_name;
+
     function shanghai_time ()
     {
+        offset = 8;
+
+        other_city_name = 'Shanghai'
+        
+        other_city_time ()
+    }
+
+    document.getElementById ('shanghai').addEventListener('click', local_time);
+    document.getElementById ('shanghai').addEventListener('click', shanghai_time);
+
+
+    function tokyo_time ()
+    {
+        offset = 9;
+
+        other_city_name = 'Tokyo'
+        
+        other_city_time ()
+    }
+
+    document.getElementById ('tokyo').addEventListener('click', local_time);
+    document.getElementById ('tokyo').addEventListener('click', tokyo_time);
+
     
-        let offset = 8;
+// Other Cities Time
 
-        let shanghai = utc + ( 3600000 * offset )
 
-        let nd = new Date (shanghai);
+    function other_city_time ()
+    {
+        let other_city = utc + ( 3600000 * offset )
+
+        let nd = new Date (other_city);
 
 
         let day = nd.getDay ()
@@ -354,9 +382,6 @@
         let time = hour + ':' + minute + " " + am_pm
 
 
-        console.log ( 'Shanghai time: ' + day + ', ' + month + ' ' + date + ", " + time )
+        console.log ( other_city_name + ' time: ' + day + ', ' + month + ' ' + date + ", " + time )
 
     }
-
-    document.getElementById ('shanghai').addEventListener('click', local_time);
-    document.getElementById ('shanghai').addEventListener('click', shanghai_time);

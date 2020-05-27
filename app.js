@@ -13,6 +13,8 @@
     let utc = localTime + localOffset;
 
 
+    let show_local_time = local_time ()
+
     function local_time ()
     {
         let day = d.getDay ()
@@ -195,7 +197,6 @@
         other_city_time ()
     }
 
-    document.getElementById ('shanghai').addEventListener('click', local_time);
     document.getElementById ('shanghai').addEventListener('click', shanghai_time);
 
 
@@ -208,8 +209,31 @@
         other_city_time ()
     }
 
-    document.getElementById ('tokyo').addEventListener('click', local_time);
     document.getElementById ('tokyo').addEventListener('click', tokyo_time);
+
+
+    function sydney_time ()
+    {
+        offset = 10;
+
+        other_city_name = 'Sydney'
+        
+        other_city_time ()
+    }
+
+    document.getElementById ('sydney').addEventListener('click', sydney_time);
+
+
+    function honiara_time ()
+    {
+        offset = 11;
+
+        other_city_name = 'Honiara'
+        
+        other_city_time ()
+    }
+
+    document.getElementById ('honiara').addEventListener('click', honiara_time);
 
     
 // Other Cities Time

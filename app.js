@@ -330,7 +330,7 @@
             {
                 am_pm = 'PM'
             }
-
+            hour=hour%12
         }
 
 

@@ -13,8 +13,6 @@
     let utc = localTime + localOffset;
 
 
-    let show_local_time = local_time ()
-
     function local_time ()
     {
         let day = d.getDay ()
@@ -185,8 +183,7 @@
 
     // Shanghai
 
-    let show_shanghai_time = shanghai_time ()
-
+    
     function shanghai_time ()
     {
     
@@ -360,3 +357,6 @@
         console.log ( 'Shanghai time: ' + day + ', ' + month + ' ' + date + ", " + time )
 
     }
+
+    document.getElementById ('shanghai').addEventListener('click', local_time);
+    document.getElementById ('shanghai').addEventListener('click', shanghai_time);

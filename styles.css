@@ -1,0 +1,25 @@
+.bubble_container
+{
+    width: 200px;
+}
+
+.bubble_image 
+{
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  
+  .bubble_image img 
+  {
+    width: auto;
+    height: 100%;
+    margin-left: -50px;
+  }
+
+.bold_text {font-weight: bold;
+            text-align: center;}
+

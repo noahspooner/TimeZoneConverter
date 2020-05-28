@@ -235,6 +235,42 @@
 
     document.getElementById ('honiara').addEventListener('click', honiara_time);
 
+
+    function auckland_time ()
+    {
+        offset = 12;
+
+        other_city_name = 'Auckland'
+        
+        other_city_time ()
+    }
+
+    document.getElementById ('auckland').addEventListener('click', auckland_time);
+
+
+    function apia_time ()
+    {
+        offset = 13;
+
+        other_city_name = 'Apia'
+        
+        other_city_time ()
+    }
+
+    document.getElementById ('apia').addEventListener('click', apia_time);
+
+
+    function honolulu_time ()
+    {
+        offset = -10;
+
+        other_city_name = 'Honolulu'
+        
+        other_city_time ()
+    }
+
+    document.getElementById ('honolulu').addEventListener('click', honolulu_time);
+
     
 // Other Cities Time
 

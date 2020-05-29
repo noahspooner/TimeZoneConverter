@@ -271,6 +271,30 @@
 
     document.getElementById ('honolulu').addEventListener('click', honolulu_time);
 
+
+    function taiohae_time ()
+    {
+        offset = -9.5;
+
+        other_city_name = 'Taiohae'
+        
+        other_city_time ()
+    }
+
+    document.getElementById ('taiohae').addEventListener('click', taiohae_time);
+
+
+    function rikitea_time ()
+    {
+        offset = -9;
+
+        other_city_name = 'Rikitea'
+        
+        other_city_time ()
+    }
+
+    document.getElementById ('rikitea').addEventListener('click', rikitea_time);
+
     
 // Other Cities Time
 

@@ -445,3 +445,10 @@
         console.log ( other_city_name + ' time: ' + day + ', ' + month + ' ' + date + ", " + time )
 
     }
+
+
+// Auto reload page every 1 minute
+
+setTimeout (function() {
+    window.location.reload (1);
+ }, 60000);  // time in ms 

@@ -295,7 +295,67 @@
 
     document.getElementById ('rikitea').addEventListener('click', rikitea_time);
 
-    
+
+    function adamstown_time ()
+    {
+        offset = -8;
+
+        other_city_name = 'Adamstown'
+        
+        other_city_time ()
+    }
+
+    document.getElementById ('adamstown').addEventListener('click', adamstown_time);
+
+
+    function vancouver_time ()
+    {
+        offset = -7;
+
+        other_city_name = 'Vancouver'
+        
+        other_city_time ()
+    }
+
+    document.getElementById ('vancouver').addEventListener('click', vancouver_time);
+
+
+    function calgary_time ()
+    {
+        offset = -6;
+
+        other_city_name = 'Calgary'
+        
+        other_city_time ()
+    }
+
+    document.getElementById ('calgary').addEventListener('click', calgary_time);
+
+
+    function houston_time ()
+    {
+        offset = -5;
+
+        other_city_name = 'Houston'
+        
+        other_city_time ()
+    }
+
+    document.getElementById ('houston').addEventListener('click', houston_time);
+
+
+    function ottawa_time ()
+    {
+        offset = -4;
+
+        other_city_name = 'Ottawa'
+        
+        other_city_time ()
+    }
+
+    document.getElementById ('ottawa').addEventListener('click', ottawa_time);
+
+
 // Other Cities Time
 
 

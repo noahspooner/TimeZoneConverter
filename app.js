@@ -23,7 +23,12 @@
 
         function get_day_of_week ()
         {
-            if (day == 1)
+            if (day == 0)
+            {
+            day = 'Sunday'
+            }
+
+            else if (day == 1)
             {
             day = 'Monday'
             }
@@ -51,11 +56,6 @@
             else if (day == 6)
             {
             day = 'Saturday'
-            }
-
-            else if (day == 7)
-            {
-            day = 'Sunday'
             }
         }
 
@@ -356,6 +356,30 @@
     document.getElementById ('ottawa').addEventListener('click', ottawa_time);
 
 
+    function rio_time ()
+    {
+        offset = -3;
+
+        other_city_name = 'Rio de Janeiro'
+        
+        other_city_time ()
+    }
+
+    document.getElementById ('rio').addEventListener('click', rio_time);
+
+
+    function stjohn_time ()
+    {
+        offset = -2.5;
+
+        other_city_name = "St. John's"
+        
+        other_city_time ()
+    }
+
+    document.getElementById ('stjohn').addEventListener('click', stjohn_time);
+
+
 // Other Cities Time
 
 
@@ -372,7 +396,12 @@
 
         function get_day_of_week ()
         {
-            if (day == 1)
+            if (day == 0)
+            {
+            day = 'Sunday'
+            }
+
+            else if (day == 1)
             {
             day = 'Monday'
             }
@@ -400,11 +429,6 @@
             else if (day == 6)
             {
             day = 'Saturday'
-            }
-
-            else if (day == 7)
-            {
-            day = 'Sunday'
             }
         }
 

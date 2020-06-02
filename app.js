@@ -380,6 +380,66 @@
     document.getElementById ('stjohn').addEventListener('click', stjohn_time);
 
 
+    function edward_time ()
+    {
+        offset = -2;
+
+        other_city_name = "King Edward Point"
+        
+        other_city_time ()
+    }
+
+    document.getElementById ('edward').addEventListener('click', edward_time);
+
+
+    function praia_time ()
+    {
+        offset = -1;
+
+        other_city_name = "Praia"
+        
+        other_city_time ()
+    }
+
+    document.getElementById ('praia').addEventListener('click', praia_time);
+
+
+    function canakry_time ()
+    {
+        offset = 0;
+
+        other_city_name = "Canakry"
+        
+        other_city_time ()
+    }
+
+    document.getElementById ('canakry').addEventListener('click', canakry_time);
+
+
+    function london_time ()
+    {
+        offset = 1;
+
+        other_city_name = "London"
+        
+        other_city_time ()
+    }
+
+    document.getElementById ('london').addEventListener('click', london_time);
+
+
+    function paris_time ()
+    {
+        offset = 2;
+
+        other_city_name = "Paris"
+        
+        other_city_time ()
+    }
+
+    document.getElementById ('paris').addEventListener('click', paris_time);
+
+
 // Other Cities Time
 
 

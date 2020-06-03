@@ -440,6 +440,54 @@
     document.getElementById ('paris').addEventListener('click', paris_time);
 
 
+    function moscow_time ()
+    {
+        offset = 3;
+
+        other_city_name = "Moscow"
+        
+        other_city_time ()
+    }
+
+    document.getElementById ('moscow').addEventListener('click', moscow_time);
+
+
+    function yerevan_time ()
+    {
+        offset = 4;
+
+        other_city_name = "Yerevan"
+        
+        other_city_time ()
+    }
+
+    document.getElementById ('yerevan').addEventListener('click', yerevan_time);
+
+
+    function tehran_time ()
+    {
+        offset = 4.5;
+
+        other_city_name = "Tehran"
+        
+        other_city_time ()
+    }
+
+    document.getElementById ('tehran').addEventListener('click', tehran_time);
+
+
+    function karachi_time ()
+    {
+        offset = 5;
+
+        other_city_name = "Karachi"
+        
+        other_city_time ()
+    }
+
+    document.getElementById ('karachi').addEventListener('click', karachi_time);
+
+
 // Other Cities Time
 
 

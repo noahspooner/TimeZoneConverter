@@ -488,6 +488,54 @@
     document.getElementById ('karachi').addEventListener('click', karachi_time);
 
 
+    function mumbai_time ()
+    {
+        offset = 5.5;
+
+        other_city_name = "Mumbai"
+        
+        other_city_time ()
+    }
+
+    document.getElementById ('mumbai').addEventListener('click', mumbai_time);
+
+
+    function dhaka_time ()
+    {
+        offset = 6;
+
+        other_city_name = "Dhaka"
+        
+        other_city_time ()
+    }
+
+    document.getElementById ('dhaka').addEventListener('click', dhaka_time);
+
+
+    function yangon_time ()
+    {
+        offset = 6.5;
+
+        other_city_name = "Yangon"
+        
+        other_city_time ()
+    }
+
+    document.getElementById ('yangon').addEventListener('click', yangon_time);
+
+
+    function bangkok_time ()
+    {
+        offset = 7;
+
+        other_city_name = "Bangkok"
+        
+        other_city_time ()
+    }
+
+    document.getElementById ('bangkok').addEventListener('click', bangkok_time);
+
+
 // Other Cities Time
 
 

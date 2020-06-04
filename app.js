@@ -176,7 +176,7 @@
         let time = hour + ':' + minute + " " + am_pm
 
 
-        console.log ( 'Local time: ' + day + ', ' + month + ' ' + date + ", " + time )
+        document.getElementById ('local_time').innerHTML = ( day + ', ' + month + ' ' + date + ", " + time )
 
     }
 
@@ -706,7 +706,16 @@
         let time = hour + ':' + minute + " " + am_pm
 
 
-        console.log ( other_city_name + ' time: ' + day + ', ' + month + ' ' + date + ", " + time )
+        document.getElementById ('other_city_name').innerHTML = (other_city_name)
+
+        document.getElementById ('other_time').innerHTML = ( day + ', ' + month + ' ' + date + ", " + time )
+
+
+        document.getElementById ('time_box2').style.border = 'solid black'
+
+        document.getElementById ('time_box2').style.width = '193px'
+
+        document.getElementById ('time_box2').style.padding = '0px 10px 0px 10px'
 
     }
 

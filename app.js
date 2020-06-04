@@ -702,6 +702,8 @@
 
         }
 
+        
+        // Print out other time
 
         let time = hour + ':' + minute + " " + am_pm
 
@@ -716,6 +718,13 @@
         document.getElementById ('time_box2').style.width = '193px'
 
         document.getElementById ('time_box2').style.padding = '0px 10px 0px 10px'
+
+
+        // Brings user to top of page
+
+        document.documentElement.scrollTop = 0; // For Chromium Browsers, Firefox and IE
+
+        document.body.scrollTop = 0; // For Safari
 
     }
 

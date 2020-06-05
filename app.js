@@ -729,6 +729,35 @@
     }
 
 
+// Search bar
+
+let search_bar = document.getElementById ('search_bar')
+
+
+function enter_search ()
+{
+    let chosen_city = document.getElementById (search_bar.value )
+
+    chosen_city.querySelector ('img').click ()
+}
+
+
+    // Enter key
+
+    let input = document.getElementById( 'search_bar' );
+
+    input.addEventListener("keyup", function(event) 
+    {
+    if (event.keyCode === 13) {
+        // Cancel the default action, if needed
+        event.preventDefault();
+        
+        // Start function
+        enter_search ()
+    }
+    });
+
+
 // Auto reload page every 1 minute
 
 setTimeout (function() {

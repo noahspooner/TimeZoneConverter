@@ -10,6 +10,7 @@
     
 
 <!-- Print out city times -->
+
     <div id="time_box">
         <h1> Local time </h1>
         <p id="local_time"></p>
@@ -28,10 +29,12 @@
 
 <!-- Search Bar -->
 
-    <input type="text" id="search_bar" placeholder="Search">
+    <div id="search_bar_wrapper">
+        <input type="text" id="search_bar" placeholder="Search" autocapitalize="words">
 
-    <p> If it doesn't work, check if it's misspelt. </p>
-    <p> If it still doesn't work, we haven't added that city yet. </p>
+        <p> Make sure you spell it correctly. </p>
+        <p> If it still doesn't work, we haven't added that city yet. </p>
+    </div>
 
     <br>
     <br>
@@ -40,7 +43,7 @@
 
 <!-- Cities -->
 
-    <div id="cities">
+    <div id="grid">
 
         <div class="bubble_container" id="Shanghai">
             <div class="bubble_image">
@@ -246,6 +249,7 @@
         </div>
 
     </div>
+
 
 <!-- Image Legality -->
 

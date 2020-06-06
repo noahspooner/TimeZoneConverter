@@ -744,9 +744,7 @@ function enter_search ()
 
     // Enter key
 
-    let input = document.getElementById( 'search_bar' );
-
-    input.addEventListener("keyup", function(event) 
+    search_bar.addEventListener("keyup", function(event) 
     {
     if (event.keyCode === 13) {
         // Cancel the default action, if needed
@@ -762,4 +760,63 @@ function enter_search ()
 
 setTimeout (function() {
     window.location.reload (1);
- }, 60000);  // time in ms 
+ }, 60000);  // time in ms
+
+
+ // Grid styling
+
+let start_adjust_for_screen = adjust_for_screen ()
+
+function adjust_for_screen ()
+{
+
+    console.log (screen.width)
+
+    let grid = document.getElementById ('grid')
+
+    if ( screen.width <= 1536 && screen.width > 1440 )
+    {
+        grid.style.paddingLeft = '90px'
+    }
+
+    else if ( screen.width <= 1440 && screen.width > 1366 )
+    {
+        grid.style.paddingLeft = '80px'
+    }
+
+    else if ( screen.width <= 1366 && screen.width > 1194 )
+    {
+        grid.style.gridTemplateColumns = 'auto auto auto'
+        grid.style.paddingLeft = '190px'
+    }
+
+    else if ( screen.width <= 1194 && screen.width > 1112 )
+    {
+        grid.style.gridTemplateColumns = 'auto auto auto'
+        grid.style.paddingLeft = '140px'
+    }
+
+    else if ( screen.width <= 1112 && screen.width > 414 )
+    {
+        grid.style.gridTemplateColumns = 'auto auto auto'
+        grid.style.paddingLeft = '115px'
+    }
+
+    else if ( screen.width <= 414 && screen.width > 375 )
+    {
+        grid.style.gridTemplateColumns = 'auto'
+        grid.style.paddingLeft = '105px'
+    }
+
+    else if ( screen.width <= 375 && screen.width > 320 )
+    {
+        grid.style.gridTemplateColumns = 'auto'
+        grid.style.paddingLeft = '80px'
+    }
+
+    else if ( screen.width <= 320 )
+    {
+        grid.style.gridTemplateColumns = 'auto'
+        grid.style.paddingLeft = '60px'
+    }
+}

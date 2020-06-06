@@ -408,7 +408,7 @@
     {
         offset = 0;
 
-        other_city_name = "Canakry"
+        other_city_name = "Conakry"
         
         other_city_time ()
     }

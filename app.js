@@ -736,7 +736,7 @@ let search_bar = document.getElementById ('search_bar')
 
 function enter_search ()
 {
-    let chosen_city = document.getElementById (search_bar.value )
+    let chosen_city = document.getElementById (search_bar.value)
 
     chosen_city.querySelector ('img').click ()
 }
@@ -744,7 +744,7 @@ function enter_search ()
 
     // Enter key
 
-    search_bar.addEventListener("keyup", function(event) 
+    search_bar.addEventListener("keyup", function (event) 
     {
     if (event.keyCode === 13) {
         // Cancel the default action, if needed
@@ -758,7 +758,7 @@ function enter_search ()
 
 // Auto reload page every 1 minute
 
-setTimeout (function() {
+setTimeout (function () {
     window.location.reload (1);
  }, 60000);  // time in ms
 

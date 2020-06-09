@@ -755,6 +755,58 @@ function enter_search ()
     }
     });
 
+//search-bar suggestions    
+const cities = [];
+const bubbleContainer = document.querySelectorAll(".bubble_container");
+bubbleContainer.forEach(container => {
+    cities.push(container.getAttribute("id").toLowerCase());
+});
+
+const citySuggestions = document.querySelector(".city-suggestions");
+search_bar.addEventListener("focus", showSuggestions);
+
+search_bar.addEventListener("input", showSuggestions);
+
+function showSuggestions() 
+{
+    let firstLetterMatches = cities.filter(city => search_bar.value[0].toLowerCase() === city[0]);
+    let subStringMatches = cities.filter(city => city.indexOf(search_bar.value) !== -1);
+    let matchedCities = firstLetterMatches.filter(city => search_bar.value.toLowerCase() === city);
+    
+    citySuggestions.innerHTML = "";
+    if (matchedCities.length > 0) 
+    {
+        matchedCities.forEach(city => 
+            {
+            suggestedCityElement(city);
+            });
+    }
+    else if (firstLetterMatches.length > 0) 
+    {
+        firstLetterMatches.forEach(city => {
+            suggestedCityElement(city);
+        });
+    }
+    else if (subStringMatches.length > 0) 
+    {
+        subStringMatches.forEach(city => 
+            {
+            suggestedCityElement(city);
+            });
+    }
+}
+
+function suggestedCityElement(city) 
+{
+    const suggestedCity = document.createElement("li");
+    suggestedCity.className = "suggestion";
+    suggestedCity.innerText = city[0].toUpperCase() + city.slice(1).toLowerCase();
+    citySuggestions.appendChild(suggestedCity);
+    citySuggestions.style.display = "grid";
+}
+
+search_bar.addEventListener("blur", () => citySuggestions.style.display = "none");
+
 
 // Auto reload page every 1 minute
 

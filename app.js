@@ -335,6 +335,66 @@
             name: "New York City",
             offset: -4,
         },
+
+        {
+            id: "sacramento",
+            name: "Sacramento",
+            offset: -7,
+        },
+
+        {
+            id: "san francisco",
+            name: "San Francisco",
+            offset: -7,
+        },
+
+        {
+            id: "san jose",
+            name: "San Jose",
+            offset: -7,
+        },
+
+        {
+            id: "fresno",
+            name: "Fresno",
+            offset: -7,
+        },
+
+        {
+            id: "bakersfield",
+            name: "Bakersfield",
+            offset: -7,
+        },
+
+        {
+            id: "santa barbara",
+            name: "Santa Barbara",
+            offset: -7,
+        },
+
+        {
+            id: "san bernardino",
+            name: "San Bernardino",
+            offset: -7,
+        },
+
+        {
+            id: "los angeles",
+            name: "Los Angeles",
+            offset: -7,
+        },
+
+        {
+            id: "long beach",
+            name: "Long Beach",
+            offset: -7,
+        },
+
+        {
+            id: "san diego",
+            name: "San Diego",
+            offset: -7,
+        },
     ];
 
 

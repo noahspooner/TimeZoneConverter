@@ -183,363 +183,176 @@
 
 // Other Cities
 
+    const cities = [
+        {
+            id: "shanghai",
+            name: "Shanghai",
+            offset: 8,
+        },
+        {
+            id: "tokyo",
+            name: "Tokyo",
+            offset: 9,
+        },
+        {
+            id: "sydney",
+            name: "Sydney",
+            offset: 10,
+        },
+        {
+            id: "honiara",
+            name: "Honiara",
+            offset: 11,
+        },
+        {
+            id: "auckland",
+            name: "Auckland",
+            offset: 12,
+        },
+        {
+            id: "apia",
+            name: "Apia",
+            offset: 13,
+        },
+        {
+            id: "honolulu",
+            name: "Honolulu",
+            offset: -10,
+        },
+        {
+            id: "taiohae",
+            name: "Taiohae",
+            offset: -9.5,
+        },
+        {
+            id: "rikitea",
+            name: "Rikitea",
+            offset: -9,
+        },
+        {
+            id: "adamstown",
+            name: "Adamstown",
+            offset: -8,
+        },
+        {
+            id: "vancouver",
+            name: "Vancouver",
+            offset: -7,
+        },
+        {
+            id: "calgary",
+            name: "Calgary",
+            offset: -6,
+        },
+        {
+            id: "houston",
+            name: "Houston",
+            offset: -5,
+        },
+        {
+            id: "ottawa",
+            name: "Ottawa",
+            offset: -4,
+        },
+        {
+            id: "rio",
+            name: "Rio de Janeiro",
+            offset: -3,
+        },
+        {
+            id: "stjohn",
+            name: "St. John's",
+            offset: -2.5,
+        },
+        {
+            id: "edward",
+            name: "King Edward Point",
+            offset: -2,
+        },
+        {
+            id: "praia",
+            name: "Praia",
+            offset: -1,
+        },
+        {
+            id: "canakry",
+            name: "Conakry",
+            offset: 0,
+        },
+        {
+            id: "london",
+            name: "London",
+            offset: 1,
+        },
+        {
+            id: "paris",
+            name: "Paris",
+            offset: 2,
+        },
+        {
+            id: "moscow",
+            name: "Moscow",
+            offset: 3,
+        },
+        {
+            id: "yerevan",
+            name: "Yerevan",
+            offset: 4,
+        },
+        {
+            id: "tehran",
+            name: "Tehran",
+            offset: 4.5,
+        },
+        {
+            id: "karachi",
+            name: "Karachi",
+            offset: 5,
+        },
+        {
+            id: "mumbai",
+            name: "Mumbai",
+            offset: 5.5,
+        },
+        {
+            id: "dhaka",
+            name: "Dhaka",
+            offset: 6,
+        },
+        {
+            id: "yangon",
+            name: "Yangon",
+            offset: 6.5,
+        },
+        {
+            id: "bangkok",
+            name: "Bangkok",
+            offset: 7,
+        },
+    ];
 
-    let offset;
 
-    let other_city_name;
+    function cityClick(element) {
+        console.log(element);
 
-    function shanghai_time ()
-    {
-        offset = 8;
-
-        other_city_name = 'Shanghai'
-        
-        other_city_time ()
+        cities.forEach(city => {
+            if (city.id === element.target.parentElement.id || city.id === element.target.parentElement.parentElement.id) {
+                other_city_time(city.name, city.offset);
+            }
+        });
     }
 
-    document.getElementById ('shanghai').addEventListener('click', shanghai_time);
-
-
-    function tokyo_time ()
-    {
-        offset = 9;
-
-        other_city_name = 'Tokyo'
-        
-        other_city_time ()
-    }
-
-    document.getElementById ('tokyo').addEventListener('click', tokyo_time);
-
-
-    function sydney_time ()
-    {
-        offset = 10;
-
-        other_city_name = 'Sydney'
-        
-        other_city_time ()
-    }
-
-    document.getElementById ('sydney').addEventListener('click', sydney_time);
-
-
-    function honiara_time ()
-    {
-        offset = 11;
-
-        other_city_name = 'Honiara'
-        
-        other_city_time ()
-    }
-
-    document.getElementById ('honiara').addEventListener('click', honiara_time);
-
-
-    function auckland_time ()
-    {
-        offset = 12;
-
-        other_city_name = 'Auckland'
-        
-        other_city_time ()
-    }
-
-    document.getElementById ('auckland').addEventListener('click', auckland_time);
-
-
-    function apia_time ()
-    {
-        offset = 13;
-
-        other_city_name = 'Apia'
-        
-        other_city_time ()
-    }
-
-    document.getElementById ('apia').addEventListener('click', apia_time);
-
-
-    function honolulu_time ()
-    {
-        offset = -10;
-
-        other_city_name = 'Honolulu'
-        
-        other_city_time ()
-    }
-
-    document.getElementById ('honolulu').addEventListener('click', honolulu_time);
-
-
-    function taiohae_time ()
-    {
-        offset = -9.5;
-
-        other_city_name = 'Taiohae'
-        
-        other_city_time ()
-    }
-
-    document.getElementById ('taiohae').addEventListener('click', taiohae_time);
-
-
-    function rikitea_time ()
-    {
-        offset = -9;
-
-        other_city_name = 'Rikitea'
-        
-        other_city_time ()
-    }
-
-    document.getElementById ('rikitea').addEventListener('click', rikitea_time);
-
-
-    function adamstown_time ()
-    {
-        offset = -8;
-
-        other_city_name = 'Adamstown'
-        
-        other_city_time ()
-    }
-
-    document.getElementById ('adamstown').addEventListener('click', adamstown_time);
-
-
-    function vancouver_time ()
-    {
-        offset = -7;
-
-        other_city_name = 'Vancouver'
-        
-        other_city_time ()
-    }
-
-    document.getElementById ('vancouver').addEventListener('click', vancouver_time);
-
-
-    function calgary_time ()
-    {
-        offset = -6;
-
-        other_city_name = 'Calgary'
-        
-        other_city_time ()
-    }
-
-    document.getElementById ('calgary').addEventListener('click', calgary_time);
-
-
-    function houston_time ()
-    {
-        offset = -5;
-
-        other_city_name = 'Houston'
-        
-        other_city_time ()
-    }
-
-    document.getElementById ('houston').addEventListener('click', houston_time);
-
-
-    function ottawa_time ()
-    {
-        offset = -4;
-
-        other_city_name = 'Ottawa'
-        
-        other_city_time ()
-    }
-
-    document.getElementById ('ottawa').addEventListener('click', ottawa_time);
-
-
-    function rio_time ()
-    {
-        offset = -3;
-
-        other_city_name = 'Rio de Janeiro'
-        
-        other_city_time ()
-    }
-
-    document.getElementById ('rio').addEventListener('click', rio_time);
-
-
-    function stjohn_time ()
-    {
-        offset = -2.5;
-
-        other_city_name = "St. John's"
-        
-        other_city_time ()
-    }
-
-    document.getElementById ('stjohn').addEventListener('click', stjohn_time);
-
-
-    function edward_time ()
-    {
-        offset = -2;
-
-        other_city_name = "King Edward Point"
-        
-        other_city_time ()
-    }
-
-    document.getElementById ('edward').addEventListener('click', edward_time);
-
-
-    function praia_time ()
-    {
-        offset = -1;
-
-        other_city_name = "Praia"
-        
-        other_city_time ()
-    }
-
-    document.getElementById ('praia').addEventListener('click', praia_time);
-
-
-    function canakry_time ()
-    {
-        offset = 0;
-
-        other_city_name = "Conakry"
-        
-        other_city_time ()
-    }
-
-    document.getElementById ('canakry').addEventListener('click', canakry_time);
-
-
-    function london_time ()
-    {
-        offset = 1;
-
-        other_city_name = "London"
-        
-        other_city_time ()
-    }
-
-    document.getElementById ('london').addEventListener('click', london_time);
-
-
-    function paris_time ()
-    {
-        offset = 2;
-
-        other_city_name = "Paris"
-        
-        other_city_time ()
-    }
-
-    document.getElementById ('paris').addEventListener('click', paris_time);
-
-
-    function moscow_time ()
-    {
-        offset = 3;
-
-        other_city_name = "Moscow"
-        
-        other_city_time ()
-    }
-
-    document.getElementById ('moscow').addEventListener('click', moscow_time);
-
-
-    function yerevan_time ()
-    {
-        offset = 4;
-
-        other_city_name = "Yerevan"
-        
-        other_city_time ()
-    }
-
-    document.getElementById ('yerevan').addEventListener('click', yerevan_time);
-
-
-    function tehran_time ()
-    {
-        offset = 4.5;
-
-        other_city_name = "Tehran"
-        
-        other_city_time ()
-    }
-
-    document.getElementById ('tehran').addEventListener('click', tehran_time);
-
-
-    function karachi_time ()
-    {
-        offset = 5;
-
-        other_city_name = "Karachi"
-        
-        other_city_time ()
-    }
-
-    document.getElementById ('karachi').addEventListener('click', karachi_time);
-
-
-    function mumbai_time ()
-    {
-        offset = 5.5;
-
-        other_city_name = "Mumbai"
-        
-        other_city_time ()
-    }
-
-    document.getElementById ('mumbai').addEventListener('click', mumbai_time);
-
-
-    function dhaka_time ()
-    {
-        offset = 6;
-
-        other_city_name = "Dhaka"
-        
-        other_city_time ()
-    }
-
-    document.getElementById ('dhaka').addEventListener('click', dhaka_time);
-
-
-    function yangon_time ()
-    {
-        offset = 6.5;
-
-        other_city_name = "Yangon"
-        
-        other_city_time ()
-    }
-
-    document.getElementById ('yangon').addEventListener('click', yangon_time);
-
-
-    function bangkok_time ()
-    {
-        offset = 7;
-
-        other_city_name = "Bangkok"
-        
-        other_city_time ()
-    }
-
-    document.getElementById ('bangkok').addEventListener('click', bangkok_time);
-
+    const bubbleContainer = document.querySelectorAll(".bubble_container");
+    bubbleContainer.forEach(container => {
+        container.addEventListener('click', cityClick);
+    });
+
+    
 
 // Other Cities Time
 
 
-    function other_city_time ()
+    function other_city_time (other_city_name, offset)
     {
         let other_city = utc + ( 3600000 * offset )
 
@@ -756,12 +569,6 @@ function enter_search ()
     });
 
 //search-bar suggestions    
-const cities = [];
-const bubbleContainer = document.querySelectorAll(".bubble_container");
-bubbleContainer.forEach(container => {
-    cities.push(container.getAttribute("id").toLowerCase());
-});
-
 const citySuggestions = document.querySelector(".city-suggestions");
 search_bar.addEventListener("focus", showSuggestions);
 
@@ -769,9 +576,9 @@ search_bar.addEventListener("input", showSuggestions);
 
 function showSuggestions() 
 {
-    let firstLetterMatches = cities.filter(city => search_bar.value[0].toLowerCase() === city[0]);
-    let subStringMatches = cities.filter(city => city.indexOf(search_bar.value) !== -1);
-    let matchedCities = firstLetterMatches.filter(city => search_bar.value.toLowerCase() === city);
+    let firstLetterMatches = cities.filter(city => search_bar.value.length ? search_bar.value[0].toLowerCase() === city.name[0].toLowerCase() : false);
+    let subStringMatches = cities.filter(city => search_bar.value !== "" && city.name.indexOf(search_bar.value) !== -1);
+    let matchedCities = firstLetterMatches.filter(city => search_bar.value.toLowerCase() === city.name);
     
     citySuggestions.innerHTML = "";
     if (matchedCities.length > 0) 
@@ -796,11 +603,18 @@ function showSuggestions()
     }
 }
 
+function searchSuggestionClicked(element) {
+    let chosen_city = document.getElementById(element.target.dataset.city_id);
+    chosen_city.querySelector ('img').click ()
+}
+
 function suggestedCityElement(city) 
 {
     const suggestedCity = document.createElement("li");
     suggestedCity.className = "suggestion";
-    suggestedCity.innerText = city[0].toUpperCase() + city.slice(1).toLowerCase();
+    suggestedCity.innerText = city.name;
+    suggestedCity.dataset.city_id = city.id;
+    suggestedCity.addEventListener('mousedown', searchSuggestionClicked);
     citySuggestions.appendChild(suggestedCity);
     citySuggestions.style.display = "grid";
 }

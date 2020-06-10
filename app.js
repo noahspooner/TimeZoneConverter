@@ -553,6 +553,32 @@ function enter_search ()
 
     let chosen_city_lower_case = chosen_city.toLowerCase ()
 
+    console.log (chosen_city_lower_case)
+
+    // To correct cities whose name is different from their id
+
+        if (chosen_city_lower_case === 'rio de janeiro')
+        {
+            chosen_city_lower_case = 'rio'
+        }
+
+        else  if ( chosen_city_lower_case === "st. john's" || chosen_city_lower_case === "st john's" )
+        {
+            chosen_city_lower_case = 'stjohn'
+        }
+
+        else if ( chosen_city_lower_case === "king edward point" )
+        {
+            chosen_city_lower_case = 'edward'
+        }
+
+        else if ( chosen_city_lower_case === "conakry" )
+        {
+            chosen_city_lower_case = "canakry"
+        }
+
+    // To simulate a click of that city's image
+
     let chosen_city_element = document.getElementById (chosen_city_lower_case)
 
     chosen_city_element.querySelector ('img').click ()

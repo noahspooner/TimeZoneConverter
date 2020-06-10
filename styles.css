@@ -6,7 +6,10 @@
 
 #time_box2 {margin: auto;}
 
-#search_bar_wrapper {text-align: center;}
+#search_bar_wrapper {
+            text-align: center;
+            position: relative;
+          }
 
 #search_bar { 
               border-radius: 20px;
@@ -16,6 +19,25 @@
               padding-left: 5px;
               outline-width: 0;
             }
+
+.city-suggestions {
+                position: absolute;
+                left: 40%;
+                top: 30%;
+                width: 165px;
+                z-index: 1;
+                display: none;
+                grid-template-columns: 1fr;
+                }
+
+.suggestion {
+              border: solid gray thin;
+              padding: 10px;
+              list-style: none;
+              width: 100%;
+              text-align: left;
+              background: #dddddd;
+             }
 
 #grid   {display: grid;
         grid-template-columns: auto auto auto auto auto;

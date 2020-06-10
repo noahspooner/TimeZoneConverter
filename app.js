@@ -549,9 +549,13 @@ let search_bar = document.getElementById ('search_bar')
 
 function enter_search ()
 {
-    let chosen_city = document.getElementById (search_bar.value)
+    let chosen_city = search_bar.value
 
-    chosen_city.querySelector ('img').click ()
+    let chosen_city_lower_case = chosen_city.toLowerCase ()
+
+    let chosen_city_element = document.getElementById (chosen_city_lower_case)
+
+    chosen_city_element.querySelector ('img').click ()
 }
 
 
@@ -567,6 +571,7 @@ function enter_search ()
         enter_search ()
     }
     });
+
 
 //search-bar suggestions    
 const citySuggestions = document.querySelector(".city-suggestions");

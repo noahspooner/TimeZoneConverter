@@ -329,6 +329,12 @@
             name: "Bangkok",
             offset: 7,
         },
+
+        {
+            id: "new york city",
+            name: "New York City",
+            offset: -4,
+        },
     ];
 
 
@@ -575,6 +581,11 @@ function enter_search ()
         else if ( chosen_city_lower_case === "conakry" )
         {
             chosen_city_lower_case = "canakry"
+        }
+
+        else if ( chosen_city_lower_case === "new york" )
+        {
+            chosen_city_lower_case = "new york city"
         }
 
     // To simulate a click of that city's image

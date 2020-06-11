@@ -407,6 +407,24 @@
             name: "Victoria",
             offset: -7,
         },
+
+        {
+            id: "seattle",
+            name: "Seattle",
+            offset: -7,
+        },
+
+        {
+            id: "tacoma",
+            name: "Tacoma",
+            offset: -7,
+        },
+
+        {
+            id: "spokane",
+            name: "Spokane",
+            offset: -7,
+        },
     ];
 
 

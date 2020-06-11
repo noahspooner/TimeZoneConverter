@@ -395,6 +395,18 @@
             name: "San Diego",
             offset: -7,
         },
+
+        {
+            id: "kelowna",
+            name: "Kelowna",
+            offset: -7,
+        },
+
+        {
+            id: "victoria",
+            name: "Victoria",
+            offset: -7,
+        },
     ];
 
 

@@ -750,6 +750,16 @@ function suggestedCityElement(city)
     citySuggestions.appendChild(suggestedCity);
     citySuggestions.style.display = "grid";
     window.addEventListener('keydown', searchSuggestionKeyNavigation);    
+
+    suggestedCity.onmouseover = function () { 
+                                                suggestedCity.style.backgroundColor = '#555'; 
+                                                suggestedCity.style.color = 'whitesmoke';
+                                            };
+
+    suggestedCity.onmouseout = function ()  { 
+                                                suggestedCity.style.backgroundColor = '#ddd'; 
+                                                suggestedCity.style.color = 'black'
+                                            };
 }
 
 

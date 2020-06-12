@@ -36,7 +36,7 @@
               list-style: none;
               width: 100%;
               text-align: left;
-              background: #dddddd;
+              background-color: #dddddd;
              }
 
 #grid   {display: grid;
@@ -69,3 +69,7 @@
 .bold_text {font-weight: bold;
             text-align: center;}
 
+.changeSuggestionStyle {
+  background-color: #555;
+  color: #ddd;
+}

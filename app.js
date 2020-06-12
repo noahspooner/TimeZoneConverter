@@ -429,8 +429,6 @@
 
 
     function cityClick(element) {
-        console.log(element);
-
         cities.forEach(city => {
             if (city.id === element.target.parentElement.id || city.id === element.target.parentElement.parentElement.id) {
                 other_city_time(city.name, city.offset);
@@ -443,7 +441,6 @@
         container.addEventListener('click', cityClick);
     });
 
-    
 
 // Other Cities Time
 
@@ -649,8 +646,6 @@ function enter_search ()
 
     let chosen_city_lower_case = chosen_city.toLowerCase ()
 
-    console.log (chosen_city_lower_case)
-
     // To correct cities whose name is different from their id
 
         if (chosen_city_lower_case === 'rio de janeiro')
@@ -740,6 +735,11 @@ function searchSuggestionClicked(element) {
     chosen_city.querySelector ('img').click ()
 }
 
+function searchSuggestionEntered(element) {
+    let chosen_city = document.getElementById(element.dataset.city_id);
+    chosen_city.querySelector('img').click()
+}
+
 function suggestedCityElement(city) 
 {
     const suggestedCity = document.createElement("li");
@@ -749,6 +749,53 @@ function suggestedCityElement(city)
     suggestedCity.addEventListener('mousedown', searchSuggestionClicked);
     citySuggestions.appendChild(suggestedCity);
     citySuggestions.style.display = "grid";
+    window.addEventListener('keydown', searchSuggestionKeyNavigation);    
+}
+
+
+function searchSuggestionKeyNavigation() 
+{
+    const suggestedCity = Array.from(document.querySelectorAll(".suggestion"));
+    if(citySuggestions.style.display === "grid" && event.code === "ArrowDown") 
+    {
+        for(let i = 0; i<suggestedCity.length; i++) 
+        {
+            if (suggestedCity[i].classList.contains("changeSuggestionStyle")) 
+            {
+                suggestedCity[i].classList.toggle("changeSuggestionStyle");
+                suggestedCity[i + 1].classList.toggle("changeSuggestionStyle");
+                return;
+            }
+        }
+        suggestedCity[0].classList.toggle("changeSuggestionStyle");
+    } 
+    else if (citySuggestions.style.display === "grid" && event.code === "ArrowUp") 
+    {
+        for (let i = 0; i < suggestedCity.length; i++) 
+        {
+            if (suggestedCity[i].classList.contains("changeSuggestionStyle")) 
+            {
+                suggestedCity[i].classList.toggle("changeSuggestionStyle");
+                suggestedCity[i - 1].classList.toggle("changeSuggestionStyle");
+                return;
+            }
+        }
+        suggestedCity[suggestedCity.length-1].classList.toggle("changeSuggestionStyle");
+    } 
+    else if (citySuggestions.style.display === "grid" && event.code === "Enter") 
+    {
+        for (let i = 0; i < suggestedCity.length; i++) 
+        {
+            if (suggestedCity[i].classList.contains("changeSuggestionStyle")) 
+            {
+                searchSuggestionEntered(suggestedCity[i]);
+                search_bar.value = suggestedCity[i].dataset.city_id;
+                citySuggestions.style.display = "none";
+                return;
+            }
+        }   
+    }
+    return; 
 }
 
 search_bar.addEventListener("blur", () => citySuggestions.style.display = "none");
@@ -767,8 +814,6 @@ let start_adjust_for_screen = adjust_for_screen ()
 
 function adjust_for_screen ()
 {
-
-    console.log (screen.width)
 
     let grid = document.getElementById ('grid')
 

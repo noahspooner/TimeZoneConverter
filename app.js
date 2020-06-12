@@ -771,6 +771,8 @@ function searchSuggestionKeyNavigation()
             if (suggestedCity[i].classList.contains("changeSuggestionStyle")) 
             {
                 searchSuggestionEntered(suggestedCity[i]);
+                search_bar.value = suggestedCity[i].dataset.city_id;
+                citySuggestions.style.display = "none";
                 return;
             }
         }   

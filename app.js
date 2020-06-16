@@ -437,6 +437,48 @@
             name: "Las Vegas",
             offset: -7,
         },
+
+        {
+            id: "salt lake city",
+            name: "Salt Lake City",
+            offset: -6,
+        },
+
+        {
+            id: "phoenix",
+            name: "Phoenix",
+            offset: -6,
+        },
+
+        {
+            id: "tucson",
+            name: "Tucson",
+            offset: -6,
+        },
+
+        {
+            id: "denver",
+            name: "Denver",
+            offset: -6,
+        },
+
+        {
+            id: "colorado springs",
+            name: "Colorado Springs",
+            offset: -6,
+        },
+
+        {
+            id: "albuquerque",
+            name: "Albuquerque",
+            offset: -6,
+        },
+
+        {
+            id: "el paso",
+            name: "El Paso",
+            offset: -6,
+        },
     ];
 
 

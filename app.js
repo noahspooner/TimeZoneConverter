@@ -425,6 +425,12 @@
             name: "Spokane",
             offset: -7,
         },
+
+        {
+            id: "portland",
+            name: "Portland",
+            offset: -7,
+        },
     ];
 
 

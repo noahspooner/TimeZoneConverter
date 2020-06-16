@@ -431,6 +431,12 @@
             name: "Portland",
             offset: -7,
         },
+
+        {
+            id: "las vegas",
+            name: "Las Vegas",
+            offset: -7,
+        },
     ];
 
 

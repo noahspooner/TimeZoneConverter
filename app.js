@@ -479,6 +479,30 @@
             name: "El Paso",
             offset: -6,
         },
+
+        {
+            id: "fort worth",
+            name: "Fort Worth",
+            offset: -5,
+        },
+
+        {
+            id: "dallas",
+            name: "Dallas",
+            offset: -5,
+        },
+
+        {
+            id: "austin",
+            name: "Austin",
+            offset: -5,
+        },
+
+        {
+            id: "san antonio",
+            name: "San Antonio",
+            offset: -5,
+        },
     ];
 
 

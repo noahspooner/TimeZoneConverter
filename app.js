@@ -503,6 +503,60 @@
             name: "San Antonio",
             offset: -5,
         },
+
+        {
+            id: "oklahoma city",
+            name: "Oklahoma City",
+            offset: -5,
+        },
+
+        {
+            id: "minneapolis",
+            name: "Minneapolis",
+            offset: -5,
+        },
+
+        {
+            id: "kansas city",
+            name: "Kansas City",
+            offset: -5,
+        },
+
+        {
+            id: "st. louis",
+            name: "St. Louis",
+            offset: -5,
+        },
+
+        {
+            id: "new orleans",
+            name: "New Orleans",
+            offset: -5,
+        },
+
+        {
+            id: "memphis",
+            name: "Memphis",
+            offset: -5,
+        },
+        
+        {
+            id: "nashville",
+            name: "Nashville",
+            offset: -5,
+        },
+
+        {
+            id: "chicago",
+            name: "Chicago",
+            offset: -5,
+        },
+
+        {
+            id: "milwaukee",
+            name: "Milwaukee",
+            offset: -5,
+        },
     ];
 
 
@@ -749,6 +803,11 @@ function enter_search ()
         else if ( chosen_city_lower_case === "new york" )
         {
             chosen_city_lower_case = "new york city"
+        }
+
+        else if ( chosen_city_lower_case === "st louis" )
+        {
+            chosen_city_lower_case = "st. louis"
         }
 
     // To simulate a click of that city's image

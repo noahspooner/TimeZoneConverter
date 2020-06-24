@@ -611,6 +611,54 @@
             name: "Orlando",
             offset: -4,
         },
+
+        {
+            id: "buffalo",
+            name: "Buffalo",
+            offset: -4,
+        },
+
+        {
+            id: "pittsburgh",
+            name: "Pittsburgh",
+            offset: -4,
+        },
+
+        {
+            id: "washington dc",
+            name: "Washington DC",
+            offset: -4,
+        },
+
+        {
+            id: "baltimore",
+            name: "Baltimore",
+            offset: -4,
+        },
+
+        {
+            id: "philadelphia",
+            name: "Philadelphia",
+            offset: -4,
+        },
+
+        {
+            id: "providence",
+            name: "Providence",
+            offset: -4,
+        },
+
+        {
+            id: "boston",
+            name: "Boston",
+            offset: -4,
+        },
+
+        {
+            id: "san juan",
+            name: "San Juan",
+            offset: -4,
+        },
     ];
 
 

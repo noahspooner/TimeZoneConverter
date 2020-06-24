@@ -557,6 +557,60 @@
             name: "Milwaukee",
             offset: -5,
         },
+
+        {
+            id: "detroit",
+            name: "Detroit",
+            offset: -4,
+        },
+
+        {
+            id: "cleveland",
+            name: "Cleveland",
+            offset: -4,
+        },
+
+        {
+            id: "columbus",
+            name: "Columbus",
+            offset: -4,
+        },
+
+        {
+            id: "indianapolis",
+            name: "Indianapolis",
+            offset: -4,
+        },
+
+        {
+            id: "cincinnati",
+            name: "Cincinnati",
+            offset: -4,
+        },
+
+        {
+            id: "atlanta",
+            name: "Atlanta",
+            offset: -4,
+        },
+
+        {
+            id: "tampa",
+            name: "Tampa",
+            offset: -4,
+        },
+
+        {
+            id: "miami",
+            name: "Miami",
+            offset: -4,
+        },
+
+        {
+            id: "orlando",
+            name: "Orlando",
+            offset: -4,
+        },
     ];
 
 

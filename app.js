@@ -659,6 +659,42 @@
             name: "San Juan",
             offset: -4,
         },
+
+        {
+            id: "edmonton",
+            name: "Edmonton",
+            offset: -6,
+        },
+
+        {
+            id: "winnipeg",
+            name: "Winnipeg",
+            offset: -5,
+        },
+
+        {
+            id: "toronto",
+            name: "Toronto",
+            offset: -4,
+        },
+
+        {
+            id: "montreal",
+            name: "Montreal",
+            offset: -4,
+        },
+
+        {
+            id: "quebec city",
+            name: "Quebec City",
+            offset: -4,
+        },
+
+        {
+            id: "halifax",
+            name: "Halifax",
+            offset: -3,
+        },
     ];
 
 
@@ -910,6 +946,11 @@ function enter_search ()
         else if ( chosen_city_lower_case === "st louis" )
         {
             chosen_city_lower_case = "st. louis"
+        }
+
+        else if ( chosen_city_lower_case === "quebec" )
+        {
+            chosen_city_lower_case = "quebec city"
         }
 
     // To simulate a click of that city's image

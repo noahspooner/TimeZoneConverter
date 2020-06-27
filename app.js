@@ -695,6 +695,42 @@
             name: "Halifax",
             offset: -3,
         },
+
+        {
+            id: "lisbon",
+            name: "Lisbon",
+            offset: 1,
+        },
+
+        {
+            id: "dublin",
+            name: "Dublin",
+            offset: 1,
+        },
+
+        {
+            id: "liverpool",
+            name: "Liverpool",
+            offset: 1,
+        },
+
+        {
+            id: "manchester",
+            name: "Manchester",
+            offset: 1,
+        },
+
+        {
+            id: "madrid",
+            name: "Madrid",
+            offset: 2,
+        },
+
+        {
+            id: "barcelona",
+            name: "Barcelona",
+            offset: 2,
+        },
     ];
 
 

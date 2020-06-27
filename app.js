@@ -731,6 +731,30 @@
             name: "Barcelona",
             offset: 2,
         },
+
+        {
+            id: "luxembourg",
+            name: "Luxembourg",
+            offset: 2,
+        },
+
+        {
+            id: "brussels",
+            name: "Brussels",
+            offset: 2,
+        },
+
+        {
+            id: "rotterdam",
+            name: "Rotterdam",
+            offset: 2,
+        },
+
+        {
+            id: "amsterdam",
+            name: "Amsterdam",
+            offset: 2,
+        },
     ];
 
 

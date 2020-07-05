@@ -1,3 +1,9 @@
+.float_right {float: right;}
+
+.center_and_shrink {display: block;
+                    margin: 0 auto;
+                    width: 7%;}
+
 #time_box {border: solid black;
             width: fit-content;
             padding-left: 10px;

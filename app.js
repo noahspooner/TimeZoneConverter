@@ -827,6 +827,12 @@
             name: "Singapore",
             offset: 8,
         },
+
+        {
+            id: "venice",
+            name: "Venice",
+            offset: 2,
+        },
     ];
 
 

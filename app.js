@@ -755,6 +755,78 @@
             name: "Amsterdam",
             offset: 2,
         },
+
+        {
+            id: "berlin",
+            name: "Berlin",
+            offset: 2,
+        },
+
+        {
+            id: "rome",
+            name: "Rome",
+            offset: 2,
+        },
+
+        {
+            id: "vienna",
+            name: "Vienna",
+            offset: 2,
+        },
+
+        {
+            id: "prague",
+            name: "Prague",
+            offset: 2,
+        },
+
+        {
+            id: "warsaw",
+            name: "Warsaw",
+            offset: 2,
+        },
+
+        {
+            id: "cairo",
+            name: "Cairo",
+            offset: 2,
+        },
+
+        {
+            id: "istanbul",
+            name: "Istanbul",
+            offset: 3,
+        },
+
+        {
+            id: "new delhi",
+            name: "New Delhi",
+            offset: 5.5,
+        },
+
+        {
+            id: "beijing",
+            name: "Beijing",
+            offset: 8,
+        },
+
+        {
+            id: "hong kong",
+            name: "Hong Kong",
+            offset: 8,
+        },
+
+        {
+            id: "ho chi minh city",
+            name: "Ho Chi Minh City",
+            offset: 7,
+        },
+
+        {
+            id: "singapore",
+            name: "Singapore",
+            offset: 8,
+        },
     ];
 
 
